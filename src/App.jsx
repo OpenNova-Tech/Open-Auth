@@ -43,13 +43,13 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-100 p-6">
+    <div className="min-h-screen bg-black p-6">
       <h2 className="text-3xl font-bold mb-6 text-center text-blue-700">User Management</h2>
 
       {/* Signup Form */}
-      <div className="max-w-md mx-auto mb-10 bg-white p-6 rounded-lg shadow">
+      <div className="max-w-md mx-auto mb-10 bg-slate-900 p-6 rounded-lg shadow">
         <h3 className="text-xl font-semibold mb-4 text-blue-600">Sign Up</h3>
-        <form onSubmit={handleSubmit} className="space-y-4">
+        <form onSubmit={handleSubmit} className="text-white space-y-4">
           <input
             type="text"
             placeholder="Name"
@@ -84,9 +84,8 @@ function App() {
         {message && <p className="mt-4 text-center text-green-600">{message}</p>}
       </div>
 
-      {/* Users Table */}
       <div className="overflow-x-auto">
-        <table className="min-w-full bg-white shadow-md rounded-lg overflow-hidden">
+        <table className="min-w-full bg-slate-900 shadow-md rounded-lg overflow-hidden">
           <thead className="bg-blue-600 text-white">
             <tr>
               <th className="px-6 py-3 text-left text-sm font-semibold">#</th>
@@ -97,7 +96,7 @@ function App() {
           <tbody>
             {users.length === 0 ? (
               <tr>
-                <td colSpan="3" className="text-center py-4 text-gray-500">
+                <td colSpan="3" className="text-center py-4 text-slate-400">
                   No users found.
                 </td>
               </tr>
